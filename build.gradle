@@ -9,7 +9,7 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-
+/*
 buildscript {
     repositories {
         google()
@@ -28,4 +28,4 @@ allprojects {
         jcenter()
         maven{url = "https://jitpack.io"}
     }
-}
+} */

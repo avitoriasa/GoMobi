@@ -10,6 +10,7 @@ class DashView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dash_view)
+
         BarChart barChart = findViewById(R.id.barchart);
         BarDataSet barDataSet = new BarDataSet(barArrayList; "Valores")
         BarData barData = new BarData(barDataSet);
