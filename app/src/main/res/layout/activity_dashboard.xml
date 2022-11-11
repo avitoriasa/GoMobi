@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <View
+        android:id="@+id/logo_go"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_logo_go"
+        app:layout_constraintEnd_toStartOf="@+id/hello"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/hello"
+        android:textAppearance="@style/bold_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/acess_config"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_acess_config"
+        android:clipToOutline="true"
+        android:contextClickable="true"
+        android:contentDescription="barra de acessibilidade"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toEndOf="@+id/hello"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="@settings_activity"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rectangle_1"
+            android:layout_width="354dp"
+            android:layout_height="53dp"
+            android:background="@drawable/rectangle1">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtbox_saldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/txtbox_saldo"
+            android:textAppearance="@style/small_information" />
+
+        <TextView
+            android:id="@+id/pontos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/txt_saldopoints"
+            android:textAppearance="@style/dark_information" />
+
+        <TextView
+            android:id="@+id/txt_saldodinheiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/txt_saldodinheiro"
+            android:textAppearance="@style/dark_information" />
+
+    </GridLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

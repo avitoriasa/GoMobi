@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">GoMobi</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Criar nova conta</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+    <string name="login_description">O seu lugar para treinar!</string>
+
+    <!-- activity_main.xml -->
+    <string name="hello">"Hello @name"</string>
+    <string name="txtbox_saldo">Saldo atual:</string>
+    <string name="txt_saldopoints">000 pontos</string>
+    <string name="txt_saldodinheiro">R$ 000,00</string>
+    <string name="txt_fraseparceiro">Procure o melhor parceiro para você!</string>
+    <string name="txt_desafios">Desafios</string>
+    <string name="option_desafio1">Treine com um amigo</string>
+    <string name="option_desafio2">
+        Aquecimento
+    </string>
+    <string name="option_desafio3">
+        Estimule membros inferiores
+    </string>
+    <string name="option_desafio4">
+        Estimule membros superiores
+    </string>
+
+
+    <string name="title_activity_settings">Ajustes</string>
+
+
+    <!-- Dashboard -->
+    <string name="title_desempenho">Desempenho na semana</string>
+
+
+</resources>
